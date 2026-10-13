@@ -1,0 +1,8 @@
+{
+  "formatVersion": 2,
+  "savedAtUtc": "2026-10-13T00:00:00Z",
+  "projects": [
+    { "id": 1, "name": "Каталог", "hours": 12 }
+  ]
+}
+

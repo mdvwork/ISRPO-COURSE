@@ -1,0 +1,15 @@
+PRAGMA foreign_keys = ON;
+
+CREATE TABLE Projects (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Name TEXT NOT NULL UNIQUE CHECK (length(trim(Name)) >= 3)
+);
+
+CREATE TABLE Tasks (
+    Id INTEGER PRIMARY KEY AUTOINCREMENT,
+    Title TEXT NOT NULL CHECK (length(trim(Title)) >= 3),
+    IsDone INTEGER NOT NULL DEFAULT 0 CHECK (IsDone IN (0, 1)),
+    ProjectId INTEGER NOT NULL,
+    FOREIGN KEY (ProjectId) REFERENCES Projects(Id) ON DELETE RESTRICT
+);
+

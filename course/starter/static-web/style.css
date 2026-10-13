@@ -1,0 +1,14 @@
+:root { font-family: system-ui, sans-serif; color: #172033; background: #f5f7fb; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.site-header, main { width: min(70rem, 100% - 2rem); margin-inline: auto; }
+.site-header { padding-block: 1rem; }
+form { display: flex; flex-wrap: wrap; gap: .5rem; align-items: end; }
+label { flex-basis: 100%; font-weight: 600; }
+input, button { min-height: 2.75rem; padding: .5rem .75rem; font: inherit; }
+button { color: white; background: #2457a7; border: 0; border-radius: .35rem; }
+button:focus-visible, input:focus-visible { outline: .2rem solid #f59e0b; outline-offset: .15rem; }
+.projects { display: grid; gap: 1rem; margin-block: 1rem; }
+.project-card { padding: 1rem; background: white; border: 1px solid #cbd5e1; border-radius: .5rem; }
+@media (min-width: 48rem) { .projects { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+

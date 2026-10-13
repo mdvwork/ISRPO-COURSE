@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Учебные проекты</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+</head>
+<body>
+  <header class="site-header"><h1>Учебные проекты</h1></header>
+  <main>
+    <form id="filter-form">
+      <label for="query">Фильтр по названию</label>
+      <input id="query" name="query" type="search">
+      <button type="submit">Применить</button>
+    </form>
+    <p id="status" role="status">Загрузка…</p>
+    <section id="projects" class="projects" aria-label="Список проектов"></section>
+  </main>
+</body>
+</html>
+

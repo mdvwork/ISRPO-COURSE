@@ -1,0 +1,8 @@
+{
+  "formatVersion": 2,
+  "projects": [
+    { "id": 1, "name": "Каталог", "hours": 12 }
+    { "id": 1, "name": "Дубликат", "hours": 1001 }
+  ]
+}
+
